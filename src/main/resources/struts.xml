@@ -8,15 +8,15 @@
 
     <constant name="struts.devMode" value="true" />
 
-    <package name="login" extends="struts-default">
+    <package name="login" namespace="/" extends="struts-default">
 
         <action name="login">
-            <result>/login.jsp</result>
+            <result>login.jsp</result>
         </action>
 
         <action name="loginProcess" class="login.LoginAction">
-            <result name="success">/success.jsp</result>
-            <result name="error">/login.jsp</result>
+            <result name="success">success.jsp</result>
+            <result name="error">login.jsp</result>
         </action>
 
     </package>
